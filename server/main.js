@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 app.post('/payload', (req,res) => {
     console.log("Holiiiis");
-    res.send(req);
+    res.send(req.body);
 });
 
 app.listen(port, () => {
