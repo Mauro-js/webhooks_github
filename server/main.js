@@ -16,7 +16,7 @@ const port = '4567';
 app.use(bodyParser.urlencoded({ extended : false }))
 app.use(bodyParser.json());
 
-app.get('/payload', (req,res) => {
+app.post('/payload', (req,res) => {
     console.log("Holiiiis");
     res.send(req);
 });
